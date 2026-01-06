@@ -5,13 +5,17 @@ def call_llm(prompt: str) -> str:
     payload = {
         "model": OLLAMA_MODEL,
         "prompt": prompt,
-        "stream": False
+        "stream": False,
+        "options": {
+            "num_predict": 150,     
+            "temperature": 0.3
+        }
     }
 
     response = requests.post(
         f"{OLLAMA_BASE_URL}/api/generate",
         json=payload,
-        timeout=60
+        timeout=180   
     )
 
     response.raise_for_status()

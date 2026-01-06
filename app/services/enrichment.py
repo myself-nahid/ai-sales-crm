@@ -2,13 +2,30 @@ from app.services.llm_client import call_llm
 
 def enrich_lead(lead):
     prompt = f"""
-Suggest a buyer persona based on this lead:
+You are a sales assistant.
 
-Job Title: {lead.job_title}
+Lead:
+Name: {lead.name}
 Company: {lead.company}
+Job Title: {lead.job_title}
 Industry: {lead.industry}
 
-Return a short persona description.
+Tasks:
+1. Assign priority: High, Medium, or Low
+2. Suggest a short buyer persona
+
+Return JSON like:
+{{"priority":"High","persona":"CTO – Technical Decision Maker"}}
 """
-    lead.persona = call_llm(prompt).strip()
+
+    response = call_llm(prompt)
+
+    try:
+        data = eval(response)
+        lead.priority = data.get("priority", "Medium")
+        lead.persona = data.get("persona", "Business Decision Maker")
+    except Exception:
+        lead.priority = "Medium"
+        lead.persona = "Business Decision Maker"
+
     return lead
