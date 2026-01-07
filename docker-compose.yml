@@ -10,7 +10,7 @@ services:
       - LLM_PROVIDER=ollama
       - OLLAMA_BASE_URL=http://ollama:11434
       - AUTO_RUN=true
-      - OFFLINE_MODE=true
+      - OFFLINE_MODE=false
       - SEND_EMAILS=true
     volumes:
       - ./data:/app/data
@@ -24,7 +24,9 @@ services:
       - "8025:8025"
 
   ollama:
-    image: ollama/ollama
+    build:  
+      context: .
+      dockerfile: ollama.Dockerfile
     ports:
       - "11434:11434"
     volumes:
