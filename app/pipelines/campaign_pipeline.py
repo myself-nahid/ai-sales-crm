@@ -78,7 +78,14 @@ def run_campaign():
                 body=body
             )
             lead.email_status = "Sent"
-            lead.response_status = classify_response(None)
+            response_file_path = os.path.join(DATA_DIR, "responses", f"{lead.email}.txt")
+            if os.path.exists(response_file_path):
+                with open(response_file_path, 'r') as f:
+                    response_text = f.read()
+                lead.response_status = classify_response(response_text)
+                print(f"Classified response: {lead.response_status}")
+            else:
+                lead.response_status = "Pending"
             print(f"Email sent successfully")
 
         except Exception as e:

@@ -1,6 +1,6 @@
 name,email,company,job_title,industry,priority,persona,email_status,response_status
-Ava Thompson,ava.thompson@zenbyte.ai,ZenByte Inc,CTO,Software,Medium,Business Decision Maker,Sent,Pending
-Liam Carter,liam.carter@corelogic.com,CoreLogic,Head of Product,Finance,Medium,Business Decision Maker,Sent,Pending
+Ava Thompson,ava.thompson@zenbyte.ai,ZenByte Inc,CTO,Software,Medium,Business Decision Maker,Sent,Interested
+Liam Carter,liam.carter@corelogic.com,CoreLogic,Head of Product,Finance,Medium,Business Decision Maker,Sent,Interested
 Olivia Perez,olivia.perez@healthgen.com,HealthGen,Product Manager,Healthcare,Medium,Business Decision Maker,Sent,Pending
 Noah Singh,noah.singh@cloudnova.com,CloudNova,Engineering Manager,Cloud,Medium,Business Decision Maker,Sent,Pending
 Emma Johnson,emma.johnson@finprime.com,FinPrime,VP Sales,Finance,Medium,Business Decision Maker,Sent,Pending
