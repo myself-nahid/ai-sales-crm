@@ -1,4 +1,7 @@
+import json
+import re
 from app.services.llm_client import call_llm
+
 
 def enrich_lead(lead):
     prompt = f"""
@@ -21,7 +24,13 @@ Return JSON like:
     response = call_llm(prompt)
 
     try:
-        data = eval(response)
+        # Extract first JSON object from response (robust against LLM extra text)
+        m = re.search(r"\{.*\}", response, re.DOTALL)
+        if m:
+            data = json.loads(m.group(0))
+        else:
+            data = json.loads(response)
+
         lead.priority = data.get("priority", "Medium")
         lead.persona = data.get("persona", "Business Decision Maker")
     except Exception:

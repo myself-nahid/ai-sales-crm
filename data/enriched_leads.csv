@@ -1,0 +1,21 @@
+name,email,company,job_title,industry,priority,persona,email_status,response_status
+Ava Thompson,ava.thompson@zenbyte.ai,ZenByte Inc,CTO,Software,Medium,Business Decision Maker,Sent,Pending
+Liam Carter,liam.carter@corelogic.com,CoreLogic,Head of Product,Finance,Medium,Business Decision Maker,Sent,Pending
+Olivia Perez,olivia.perez@healthgen.com,HealthGen,Product Manager,Healthcare,Medium,Business Decision Maker,Sent,Pending
+Noah Singh,noah.singh@cloudnova.com,CloudNova,Engineering Manager,Cloud,Medium,Business Decision Maker,Sent,Pending
+Emma Johnson,emma.johnson@finprime.com,FinPrime,VP Sales,Finance,Medium,Business Decision Maker,Sent,Pending
+Lucas Brown,lucas.brown@eduquest.org,EduQuest,Director of Ops,Education,Medium,Business Decision Maker,Sent,Pending
+Mia Davis,mia.davis@matech.ai,MATech,Data Scientist,AI,Medium,Business Decision Maker,Sent,Pending
+Ethan Wilson,ethan.wilson@retailpro.com,RetailPro,Head of eCommerce,Retail,Medium,Business Decision Maker,Sent,Pending
+Sophia Martinez,sophia.martinez@bioheal.co,BioHeal,Clinical Lead,Healthcare,Medium,Business Decision Maker,Sent,Pending
+James Anderson,james.anderson@infraset.com,InfraSet,CTO,Infrastructure,Medium,Business Decision Maker,Sent,Pending
+Isabella Lee,isabella.lee@adspark.io,AdSpark,Marketing Manager,Advertising,Medium,Business Decision Maker,Sent,Pending
+Benjamin Kim,ben.kim@logiworks.com,LogiWorks,Supply Chain Manager,Logistics,Medium,Business Decision Maker,Sent,Pending
+Charlotte Garcia,charlotte.garcia@greenvolt.com,GreenVolt,Product Owner,Energy,Medium,Business Decision Maker,Sent,Pending
+Elijah Moore,elijah.moore@medstream.com,MedStream,Head of Engineering,Healthcare,Medium,Business Decision Maker,Sent,Pending
+Amelia Clark,amelia.clark@urbanmove.com,UrbanMove,COO,Transportation,Medium,Business Decision Maker,Sent,Pending
+William Lewis,will.lewis@servex.com,ServEx,Customer Success Lead,Services,Medium,Business Decision Maker,Sent,Pending
+Evelyn Hall,evelyn.hall@securebyte.com,SecureByte,Security Engineer,Cybersecurity,Medium,Business Decision Maker,Sent,Pending
+Michael Young,michael.young@mrktwise.com,MrktWise,Head of Growth,Marketing,Medium,Business Decision Maker,Sent,Pending
+Harper King,harper.king@agritech.io,Agritech,Director R&D,Agriculture,Medium,Business Decision Maker,Sent,Pending
+Daniel Scott,daniel.scott@buildera.com,Buildera,Founder,Construction,Medium,Business Decision Maker,Sent,Pending

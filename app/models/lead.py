@@ -10,4 +10,5 @@ class Lead(BaseModel):
     persona: Optional[str] = None
     priority: Optional[str] = None
     email_sent: Optional[bool] = False
+    email_status: Optional[str] = None
     response_status: Optional[str] = None
